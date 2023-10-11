@@ -1,0 +1,14 @@
+{
+	"name": "prisma-repo",
+	"version": "0.0.1",
+	"description": "",
+	"scripts": {
+		"dev": "turbo run dev"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"turbo": "^1.10.15"
+	}
+}

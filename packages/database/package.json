@@ -1,0 +1,28 @@
+{
+	"name": "database",
+	"version": "0.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"types": "./dist/index.js",
+	"scripts": {
+		"db:generate": "prisma generate",
+		"postdb:generate": "npm run build",
+		"db:push": "prisma db push --skip-generate",
+		"build": "node build.js",
+		"prebuild": "rimraf dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@tsconfig/node16": "^16.1.1",
+		"@types/node": "^20.3.1",
+		"esbuild": "^0.19.4",
+		"prisma": "^5.4.2",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@prisma/client": "^5.4.2"
+	}
+}
