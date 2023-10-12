@@ -3,7 +3,9 @@
 	"version": "0.0.1",
 	"description": "",
 	"scripts": {
-		"dev": "turbo run dev"
+		"dev": "turbo run dev",
+		"db:generate": "turbo run db:generate",
+		"build": "turbo run build"
 	},
 	"keywords": [],
 	"author": "",

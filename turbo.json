@@ -5,6 +5,11 @@
 			"cache": false,
       "dependsOn": ["db:generate"]
 		},
+		"build": {
+			"cache": true,
+      "dependsOn": ["db:generate", "^build"],
+      "outputs": ["dist/**"]
+		},
 		"db:generate": {
 			"cache": false
 		},
