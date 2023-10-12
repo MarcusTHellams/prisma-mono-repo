@@ -1,14 +1,11 @@
-import { type Prisma } from 'database';
-
-const input: Prisma.UserWhereUniqueInput = {
-  email: 'mehllams@hotmail.com',
-};
-console.log('input: ', input);
+import { Query } from './components/Query';
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Query loading={false} error={'Something went wrong'}>
+        <h1>Hello World</h1>
+      </Query>
     </>
   );
 }
